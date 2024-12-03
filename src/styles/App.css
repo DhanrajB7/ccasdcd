@@ -27,3 +27,16 @@ h2 {
       font-size: 28px;
   }
 }
+/* styles/App.css */
+
+/* Reset stray elements and unwanted overflow */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+

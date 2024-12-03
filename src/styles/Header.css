@@ -1,5 +1,6 @@
 /* styles/Header.css */
 
+/* Ensure the header stays properly aligned */
 header {
     position: fixed;
     width: 100%;
@@ -7,48 +8,48 @@ header {
     z-index: 1000;
     top: 0;
     left: 0;
+    padding: 0; /* Remove any default padding */
+    height: 60px; /* Ensure a fixed height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
 }
 
+/* Fix spacing within the navigation */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 100%;
+    padding: 0 15px; /* Add consistent padding for mobile */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links li {
-    position: relative;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #00aaff;
-}
-
+/* Mobile adjustments */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         background-color: #333;
         position: absolute;
         top: 60px;
-        left: -100%;
+        left: -100%; /* Initially hide the menu */
         width: 100%;
+        padding: 10px 0; /* Add padding inside the dropdown */
         transition: left 0.3s;
     }
 
-    .nav-links a {
-        font-size: 16px;
+    /* Hamburger menu styling */
+    .hamburger-menu {
+        display: block; /* Show only in mobile view */
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1100; /* Ensure it stays on top */
     }
 }
