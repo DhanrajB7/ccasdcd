@@ -17,3 +17,13 @@ h2 {
   font-size: 36px;
   color: #333;
 }
+
+@media (max-width: 768px) {
+  section {
+      padding: 50px 15px;
+  }
+
+  h2 {
+      font-size: 28px;
+  }
+}

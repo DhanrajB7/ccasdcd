@@ -4,7 +4,7 @@
     position: relative;
     height: 60vh;
     overflow: hidden;
-    background-color: #a9a3a3; /* Replace #0d47a1 (blue) with your desired color */
+    background-color: #a9a3a3;
 }
 
 #tsparticles {
@@ -18,7 +18,7 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    color: #333; /* Adjust text color to contrast with the new background */
+    color: #333;
     padding: 0 20px;
 }
 
@@ -37,16 +37,34 @@
     margin-bottom: 20px;
 }
 
-/* Updated styles for the image */
 .profile-image-container {
     display: flex;
     justify-content: center;
 }
 
 .profile-image {
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
-    border-radius: 50%; /* Makes the image circular */
-    border: 5px solid #fff; /* White border around the image */
-    object-fit: cover; /* Ensures the image fills the container */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h2 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
 }

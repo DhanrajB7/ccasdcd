@@ -2,6 +2,7 @@
 
 #about {
     background-color: #fff;
+    padding: 20px;
 }
 
 #about p {
@@ -10,4 +11,11 @@
     font-size: 20px;
     line-height: 1.6;
     color: #555;
+}
+
+@media (max-width: 768px) {
+    #about p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
 }
